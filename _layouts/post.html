@@ -19,14 +19,13 @@
           <div class="post-meta">
             <h1 class="post-title">{{ page.title }}</h1>
             <div class="cf post-meta-text">
-              <div class="author-image" style="background-image: url({{ author.image }})">Blog Logo</div>
+              <div class="author-image" style="background-image: url({{ author.image }})"></div>
               <h4 class="author-name" itemprop="author" itemscope itemtype="http://schema.org/Person">{{ author.name }}</h4>
               -
               <time datetime="{{ page.date | date: "%F %R" }}">
                 {{ page.date | date_to_string }} -
               </time>
               <span class="post-reading-time"></span> lectura
-              <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
             </div>
             <div style="text-align:center">
               <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
@@ -45,7 +44,6 @@
                 {{ page.date | date_to_string }} -
                 <span class="post-reading-time"></span> lectura
               </time>
-              <!-- , tagged on {{#foreach tags}}<span class="post-tag-{{slug}}">{{#if @first}}{{else}}, {{/if}}<a href="/tag/{{slug}}">{{name}}</a></span>{{/foreach}} -->
             </div>
           </div>
         </div>
@@ -59,9 +57,10 @@
         </section>
         <footer class="post-footer">
           <section class="share">
+            Comparte en
             {% for social in site.social %}
               {% if social.share_url != null %}
-                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{% if social.share_title %}{{ social.share_title }}{{page.title | cgi_escape}}{% endif %}{{ social.share_link }}{{site.url}}{{site.baseurl}}{{page.id}}"
+                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{% if social.share_title %}{{ social.share_title }}{{page.title | cgi_escape}} por {{author.name | cgi_escape}}{% endif %}{{ social.share_link }}{{site.url}}{{site.baseurl}}{{page.id}}"
                   onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
                 <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
                 </a>
@@ -93,14 +92,13 @@
               <p class="published">Publicado el <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
             </section>
           </div>
-          {{/post}}
           <div class="isRight">
             <h5 class="index-headline featured"><span>Soportado por</span></h5>
             <footer class="site-footer">
               <section class="poweredby">Publicado con <a href="http://jekyllrb.com"> Jekyll</a>, Tema <a href="https://github.com/dirkfabisch/mediator">Mediator</a></section>
               <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Suscribete a nuestro feed.</span></a>
               <div class="inner">
-                <section class="copyright">Todo el contenido bajo copyright <a href="{{@blog.url}}/"> Proyecto Blog</a> &copy; {{ site.time | date: '%Y' }}<br>Todos los derechos reservados.</section>
+                <section class="copyright">Todo el contenido bajo copyright <a href="{{blog.url}}/"> Proyecto Blog</a> &copy; {{ site.time | date: '%Y' }}<br>Todos los derechos reservados.</section>
               </div>
             </footer>
           </div>
@@ -122,16 +120,6 @@
         {% endif %}
       </article>
     </main>
-    <!-- <div class="bottom-closer">
-      <div class="background-closer-image" {%if site.cover %} style="background-image: url({{ site.cover | prepend: site.baseurl }})"{% endif %}>
-        Image
-      </div>
-      <div class="inner">
-        <h1 class="blog-title">{{ site.title }}</h1>
-        <h2 class="blog-description">{{ site.description }}</h2>
-        <a href={{ "/" | prepend: site.baseurl }} class="btn">Back to Overview</a>
-      </div>
-    </div> -->
     {% include javascripts.html %}
   </body>
 </html>
