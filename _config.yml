@@ -40,8 +40,8 @@ twitter_handle: '@arandilopez'
 # social icons and sharing options
 social:
   - icon:	twitter
-    url:	https://twitter.com/arandilopez
-    desc: Follow me on twitter
+    url:	https://twitter.com/proyectoblog
+    desc: Síguenos en twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
