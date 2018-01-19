@@ -57,14 +57,7 @@
         </section>
         <footer class="post-footer">
           <section class="share">
-            {% for social in site.social %}
-              {% if social.share_url != null %}
-                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{% if social.share_title %}{{ social.share_title }}{{page.title | cgi_escape}}{% endif %}{{ social.share_link }}{{site.url}}{{site.baseurl}}{{page.id}}"
-                  onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;" title="Share on {{social.icon | capitalize}}">
-                <i class="fa fa-{{ social.icon }} fa-2x"></i><span class="hidden">{{ social.icon }}</span>
-                </a>
-              {% endif %}
-            {% endfor %}
+            {% include share_links.html %}
           </section>
         </footer>
         <div class="bottom-teaser cf">

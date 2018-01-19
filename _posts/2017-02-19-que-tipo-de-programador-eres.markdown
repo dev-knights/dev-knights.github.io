@@ -4,7 +4,7 @@ published: true
 title: ¿Qué tipo de programador eres?
 date: 2017-02-19
 author: arandi
-tags: featured php senior software
+tags: php senior software
 ---
 
 Hace unos meses leí un [artículo](https://sg.com.mx/revista/53/el-caso-php-y-los-salarios#.WKdlaxIrKRv) publicado en la revista de Software Gurú por [Basilio Briseño](https://sg.com.mx/sgvirtual/speakers/basilio-brice-o) donde planteaba que PHP es de los lenguajes menos pagados en Mexico y por qué eso sucedía. En su articulo también publica un tabulador del tipo de programador hecho por el grupo de programadores “PHP México”.
