@@ -7,6 +7,7 @@ author: arandi
 tags: featured sarcasm
 category: spanish
 image: https://static.pexels.com/photos/33535/primate-ape-thinking-mimic.jpg
+lang: es
 ---
 
 Esta es una de las grandes habilidades que los “Seniors Developers” hoy en día poseen y aquí listaré aquellos pasos a seguir para que un Ingeniero de Software tome tu código y lo re-escriba por ti.
