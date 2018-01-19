@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: ¿Qué tipo de programador eres?
 date: 2017-02-19
 author: arandi
