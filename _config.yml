@@ -16,15 +16,6 @@ float_logo: true # true, false (default)
 # blog cover
 # cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
 
-authors:
-  arandi:
-    name: Arandi López
-    bio: Software Engineer
-    twitter: arandilopez
-    github: arandilopez
-    homepage: https://arandilopez.me
-    image: https://s.gravatar.com/avatar/3d952ca670e67bf1fdcd515caae14629
-
 paginate:	5
 
 url: "https://dev-knights.github.io" # the base hostname & protocol for your site

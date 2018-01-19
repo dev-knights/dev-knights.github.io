@@ -39,7 +39,7 @@ layout: default
             </section>
             <div class="post-meta">
               <div class="post-author">
-                {{ site.authors[post.author].name }}
+                {{ site.data.authors[post.author].name }}
               </div>
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
             </div>
@@ -63,7 +63,7 @@ layout: default
             </section>
             <div class="post-meta">
               <div class="post-author">
-                {{ site.authors[post.author].name }}
+                {{ site.data.authors[post.author].name }}
               </div>
               <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
             </div>
