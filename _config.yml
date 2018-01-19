@@ -8,7 +8,7 @@ title: Dev Knights
 description: > # this means to ignore newlines until "email:"
   Blogging about Software Engineering
 timezone: America/Mexico_City
-email: contact@devknights.com
+# email: contact@devknights.com
 #blog logo
 logo: "/assets/images/logo.png"
 float_logo: true # true, false (default)
@@ -27,7 +27,7 @@ authors:
 
 paginate:	5
 
-url: "https://devknights.com" # the base hostname & protocol for your site
+url: "https://dev-knights.github.io" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@arandilopez'
