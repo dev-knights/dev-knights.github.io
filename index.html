@@ -17,7 +17,7 @@ layout: default
             &nbsp;&nbsp;·&nbsp;&nbsp;
         {% endif %}
       {% endfor %} -->
-      <a href={{ "/about/" | prepend: site.baseurl }}>Acerca de nosotros</a>
+      <a href={{ "/about" | prepend: site.baseurl }}>About</a>
     </div>
 </header>
 
@@ -25,7 +25,7 @@ layout: default
 <main class="content" role="main">
 
     {% if site.tags.featured %}
-    <h5 class="index-headline featured"><span>Más visitados</span></h5>
+    <h5 class="index-headline featured"><span>Featured</span></h5>
 
     <div class="container featured">
       {% for post in site.tags.featured %}
@@ -48,7 +48,7 @@ layout: default
       {% endfor %}
     </div>
 
-    <h5 class="index-headline normal"><span>Publicaciones</span></h5>
+    <h5 class="index-headline normal"><span>Publications</span></h5>
     {% endif %}
 
     <div class="cf frame">
@@ -74,14 +74,14 @@ layout: default
 
     <nav class="pagination" role="navigation">
       {% if paginator.next_page %}
-        <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Publicaciones anteriores</a>
+        <a class="newer-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.next_page }}>&larr; Older posts</a>
       {% endif %}
-      <span class="page-number">Página {{ paginator.page }} de {{ paginator.total_pages }}</span>
+      <span class="page-number">Page {{ paginator.page }} of {{ paginator.total_pages }}</span>
       {% if paginator.previous_page %}
         {% if paginator.page == 2 %}
-          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Publicaciones recientes &rarr;</a>
+          <a class="older-posts" href={{ "/" | prepend: site.baseurl }}>Newer posts &rarr;</a>
         {% else %}
-          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Publicaciones recientes &rarr;</a>
+          <a class="older-posts" href={{ "/page" | prepend: site.baseurl | append: paginator.previous_page }}>Newer posts &rarr;</a>
         {% endif %}
       {% endif %}
     </nav>

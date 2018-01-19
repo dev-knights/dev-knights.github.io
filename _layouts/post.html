@@ -25,7 +25,7 @@
               <time datetime="{{ page.date | date: "%F %R" }}">
                 {{ page.date | date_to_string }} -
               </time>
-              <span class="post-reading-time"></span> lectura
+              <span class="post-reading-time"></span> read
             </div>
             <div style="text-align:center">
               <a href="#topofpage" class="topofpage"><i class="fa fa-angle-down"></i></a>
@@ -57,12 +57,11 @@
         </section>
         <footer class="post-footer">
           <section class="share">
-            Comparte en
             {% for social in site.social %}
               {% if social.share_url != null %}
-                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{% if social.share_title %}{{ social.share_title }}{{page.title | cgi_escape}} por {{author.name | cgi_escape}}{% endif %}{{ social.share_link }}{{site.url}}{{site.baseurl}}{{page.id}}"
-                  onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;">
-                <i class="fa fa-{{ social.icon }}"></i><span class="hidden">{{ social.icon }}</span>
+                <a class="icon-{{ social.icon }}" href="{{ social.share_url }}{% if social.share_title %}{{ social.share_title }}{{page.title | cgi_escape}}{% endif %}{{ social.share_link }}{{site.url}}{{site.baseurl}}{{page.id}}"
+                  onclick="window.open(this.href, '{{ social.icon }}-share', 'width=550,height=255');return false;" title="Share on {{social.icon | capitalize}}">
+                <i class="fa fa-{{ social.icon }} fa-2x"></i><span class="hidden">{{ social.icon }}</span>
                 </a>
               {% endif %}
             {% endfor %}
@@ -70,9 +69,8 @@
         </footer>
         <div class="bottom-teaser cf">
           <div class="isLeft">
-            <h5 class="index-headline featured"><span>Escrito por</span></h5>
+            <h5 class="index-headline featured"><span>Written by</span></h5>
             <section class="author">
-
               <div class="author-image" style="background-image: url({{author.image | prepend: site.baseurl}})">Blog Logo</div>
               <h4>{{ author.name }}</h4>
               <p class="bio">
@@ -89,16 +87,18 @@
                 {% endif %}
               </p>
               <hr>
-              <p class="published">Publicado el <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time></p>
+              <p class="published">Published
+                <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
+              </p>
             </section>
           </div>
           <div class="isRight">
-            <h5 class="index-headline featured"><span>Soportado por</span></h5>
+            <h5 class="index-headline featured"><span>Supported by</span></h5>
             <footer class="site-footer">
-              <section class="poweredby">Publicado con <a href="http://jekyllrb.com"> Jekyll</a>, Tema <a href="https://github.com/dirkfabisch/mediator">Mediator</a></section>
-              <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Suscribete a nuestro feed.</span></a>
+              <section class="poweredby">Proudly published with <a href="http://jekyllrb.com"> Jekyll</a>, Theme <a href="https://github.com/dirkfabisch/mediator">Mediator</a></section>
+              <a class="subscribe" href="{{ "/feed.xml" | prepend: site.baseurl }}"> <span class="tooltip"> <i class="fa fa-rss"></i> Suscribe to our feed.</span></a>
               <div class="inner">
-                <section class="copyright">Todo el contenido bajo copyright <a href="{{blog.url}}/"> {{site.title}}</a> &copy; {{ site.time | date: '%Y' }}<br>Todos los derechos reservados.</section>
+                <section class="copyright">All content copyright <a href="{{blog.url}}/"> {{site.title}}</a> &copy; {{ site.time | date: '%Y' }}<br>All rights reserved.</section>
               </div>
             </footer>
           </div>

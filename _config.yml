@@ -4,13 +4,13 @@ plugins:
   - jekyll-paginate
 
 # Site settings
-title: "Proyecto Blog"
+title: Dev Knights
 description: > # this means to ignore newlines until "email:"
-   Un blog sobre Ingeniería de Software
-
-email: contacto@proyectoblog.co
+  Blogging about Software Engineering
+timezone: America/Mexico_City
+email: contact@devknights.com
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/logo.png"
 float_logo: true # true, false (default)
 
 # blog cover
@@ -19,7 +19,7 @@ float_logo: true # true, false (default)
 authors:
   arandi:
     name: Arandi López
-    bio: Ingeniero de Software
+    bio: Software Engineer
     twitter: arandilopez
     github: arandilopez
     homepage: https://arandilopez.me
@@ -27,7 +27,7 @@ authors:
 
 paginate:	5
 
-url: "https://proyectoblog.co" # the base hostname & protocol for your site
+url: "https://devknights.com" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
 twitter_handle: '@arandilopez'
@@ -40,18 +40,17 @@ twitter_handle: '@arandilopez'
 # social icons and sharing options
 social:
   - icon:	twitter
-    url:	https://twitter.com/proyectoblog
-    desc: Síguenos en twitter
+    url:	https://twitter.com/devknights
+    desc: Follow us on twitter
     share_url: http://twitter.com/share
     share_title: ?text=
     share_link: "&amp;url="
 
-#  - icon:	facebook
-#    url:	https://facebook.com/???
-#    desc: Connect with me facebook
-#    share_url: https://www.facebook.com/sharer.php
-#    share_title: ?t=
-#    share_link: "&amp;u="
+  # - icon:	facebook
+  #   # url:	https://facebook.com/???
+  #   # desc: Connect with me facebook
+  #   share_url: https://www.facebook.com/sharer/sharer.php?app_id=229963537383921&amp;display=popup
+  #   share_link: "&amp;u="
 
 #  - icon:	google-plus
 #    url:	https://google.com/???

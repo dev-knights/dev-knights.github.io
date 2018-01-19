@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}" />
     {% endif %}
   {% endif %}
-  
+
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   {% if page.excerpt %}
@@ -37,7 +37,7 @@
   {% if page.date %}<meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">{% endif %}
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}"/>
-  <link rel="shortcut icon" href="{{ "/assets/images/favicon.png" | prepend: site.baseurl }}" type="image/png"/>
+  <link rel="shortcut icon" href="{{ "/assets/images/favicon.ico" | prepend: site.baseurl }}" type="image/ico"/>
   <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Linux+Libertine:400,400i,700,700i/Open+Sans:400,400i,700,700i">
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
