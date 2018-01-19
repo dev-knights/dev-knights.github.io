@@ -4,7 +4,7 @@ published: true
 title: Cómo hacer que reescriban tu código
 date: 2017-07-05
 author: arandi
-tags: featured
+tags: featured sarcasm
 image: https://static.pexels.com/photos/33535/primate-ape-thinking-mimic.jpg
 ---
 
