@@ -28,10 +28,12 @@ $ rake serve
 
 You can write a post about anything you want related to software engineering or programming. Your post can be written in spanish or english.
 
-In order to create a new post, you should create a new markdown file in `_posts` folder or run `rake new_post` to create a new valid post file.
+In order to create a new post, you should create a new markdown file in `_posts` folder or run `rake new:post` to create a new valid post file.
 
 After finishing your post, in order to publish it, change YAML value `published: false` to `published: true`
 
 ## Drafts
 
-Drafts should be located in `_drafts` folder. After finish it, move it to `_posts` using rake command `rake publish_draft _drafts/name-of-your-draft.markdown`. *Don't forget to set `published` to true too*.
+Drafts should be located in `_drafts` folder. You can create a new draft by running `rake new:draft` command.
+
+After finish it, move it to `_posts` using rake command `rake publish_draft _drafts/name-of-your-draft.markdown`. *Don't forget to set `published` to true too*.
