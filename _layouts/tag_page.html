@@ -1,0 +1,53 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{% if page.lang %}{{page.lang}}{% else %}en{% endif %}">
+{% include head.html %}
+<body itemscope itemtype="http://schema.org/Article">
+  {% include header.html %}
+  <main class="content" role="main">
+    <article class="post">
+      <div class="noarticleimage">
+        <div class="post-meta">
+          <h1 class="post-title">{{ page.tag | capitalize }}</h1>
+        </div>
+      </div>
+      <div class="container">
+        <section class="post-content">
+          <a name="topofpage"></a>
+          <ul>
+            {% for post in page.posts %}
+            <li>
+              <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+                <div class="article-item">
+                  <header class="post-header">
+                    <h3 class="post-title" itemprop="name"><a href="{{ post.url | prepend: site.baseurl }}" itemprop="url">{{ post.title }}</a></h3>
+                  </header>
+                  <!-- <section class="post-excerpt" itemprop="description">
+                  <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
+                </section> -->
+                <div class="post-meta">
+                  <div class="post-author">
+                    {{ site.data.authors[post.author].name }} ·
+                    <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </li>
+          {% endfor %}
+        </ul>
+
+        <h2>Tags:</h2>
+        <p>
+          <div id="tag-cloud" class="tags">
+            {{ site | tag_cloud }}
+          </div>
+        </p>
+      </section>
+    </div>
+  </article>
+</main>
+{% include javascripts.html %}
+</body>
+</html>

@@ -522,9 +522,11 @@ body
           padding-bottom: 18px
           font-weight: 700
           color: #333
+
 .share
+  float: right
+  display: inline-block
   text-align: right
-  padding: 20px 0 0
   a
     text-decoration: none
     color: #bbb
@@ -619,3 +621,24 @@ pre
     border: 0
     padding-right: 0
     padding-left: 0
+.tags
+  float: left
+  display: inline-block
+
+  .tag, a.set-5
+    border: none
+    border-radius: 3px
+    background-color: #e7e7e7
+    color: #333332
+    padding: 5px
+    margin-right: 5px
+    font-size: 12px
+    text-align: center
+    text-decoration: none
+
+    &:hover
+      background-color: darken(#e7e7e7, 10%)
+    a.link
+      text-decoration: none
+      cursor: pointer
+      color: inherit

@@ -62,6 +62,13 @@
           {{content}}
         </section>
         <footer class="post-footer">
+          <section class="tags">
+            {% for tag in page.tags %}
+            <span class="tag">
+              <a class="link" href="/tag/{{tag}}">{{tag}}</a>
+            </span>
+            {% endfor %}
+          </section>
           <section class="share">
             {% include share_links.html %}
           </section>
