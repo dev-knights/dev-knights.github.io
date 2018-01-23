@@ -2,7 +2,6 @@
 layout: post
 published: true
 title: Cómo hacer que reescriban tu código
-date: 2017-07-05
 author: arandi
 tags: featured sarcasm
 category: spanish
