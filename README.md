@@ -37,3 +37,7 @@ After finishing your post, in order to publish it, change YAML value `published:
 Drafts should be located in `_drafts` folder. You can create a new draft by running `rake new:draft` command.
 
 After finish it, move it to `_posts` using rake command `rake publish_draft _drafts/name-of-your-draft.markdown`. *Don't forget to set `published` to true too*.
+
+## Troubleshooting
+
+Post an [issue](https://github.com/dev-knights/dev-knights.github.io/issues) if you have any trouble or question.
