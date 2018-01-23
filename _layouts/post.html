@@ -23,7 +23,7 @@
               </h4>
               ·
               <time datetime="{{ page.date | date: "%F %R" }}">
-                {{ page.date | date_to_string }}
+                {{ page.date | date: "%b %d, %Y" }}
                 ·
               </time>
               <span class="post-reading-time"></span> read
@@ -46,7 +46,7 @@
               </h4>
               ·
               <time datetime="{{ page.date | date_to_xmlschema }}">
-                {{ page.date | date_to_string }}
+                {{ page.date | date: "%b %d, %Y" }}
                 ·
                 <span class="post-reading-time"></span> read
               </time>
@@ -92,10 +92,10 @@
                 <a href="https://github.com/{{ author.github }}" target="_blank"><i class="fa fa-github"></i></a>
                 {% endif %}
               </p>
-              <hr>
-              <p class="published">Published
-                <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date_to_string }}</time>
-              </p>
+              <!-- <hr> -->
+              <!-- <p class="published">Published
+                <time datetime="{{ page.date | date: "%F %R" }}">{{ page.date | date: "%b %d, %Y" }}</time>
+              </p> -->
             </section>
           </div>
           <div class="isRight">
