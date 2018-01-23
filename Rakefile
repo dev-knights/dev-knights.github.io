@@ -113,7 +113,7 @@ end
 #############################
 desc "Serve blog in local machine"
 task :serve do
-  system "bundle exec jekyll serve --drafts"
+  system %{JEKYLL_ENV=development bundle exec jekyll serve --drafts --unpublished --config "_config.yml,_config.dev.yml"}
 end
 
 def get_stdin(message)
