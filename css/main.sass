@@ -41,6 +41,8 @@ body
 
 .logo-readium
   position: fixed
+  @include respond-to(800)
+    position: absolute
   left: 10px
   top: 10px
   width: $rs*3
@@ -528,6 +530,10 @@ body
   width: 47%
   display: inline-block
   text-align: right
+  @include box-sizing(border-box)
+  @include respond-to(800)
+    width: 100%
+    padding-bottom: $rs
   a
     text-decoration: none
     color: #bbb
@@ -624,11 +630,15 @@ pre
     padding-left: 0
 .tags
   float: left
+  width: 47%
+  @include box-sizing(border-box)
+  @include respond-to(800)
+    width: 100%
+    padding-bottom: $rs
   display: inline-block
 
   .tag
     border: none
-    width: 47%
     border-radius: 3px
     background-color: #e7e7e7
     color: #333332
