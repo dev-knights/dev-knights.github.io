@@ -7,11 +7,10 @@ plugins:
 
 # Site settings
 title: Dev Knights
-description: > # this means to ignore newlines until "email:"
-  Blogging about Software Engineering
+description: Blogging about Software Engineering
 timezone: America/Mexico_City
 # email: contact@devknights.com
-#blog logo
+# blog logo
 logo: "/assets/images/logo.png"
 float_logo: true # true, false (default)
 
@@ -31,25 +30,4 @@ twitter_handle: '@arandilopez'
 
 google_analytics: UA-52471938-4
 
-# social icons and sharing options
-social:
-  - icon:	twitter
-    url:	https://twitter.com/devknights
-    desc: Follow us on twitter
-    share_url: http://twitter.com/share
-    share_title: ?text=
-    share_link: "&amp;url="
-
 exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENSE", "Rakefile", "THEME-LICENSE"]
-  # - icon:	facebook
-  #   # url:	https://facebook.com/???
-  #   # desc: Connect with me facebook
-  #   share_url: https://www.facebook.com/sharer/sharer.php?app_id=229963537383921&amp;display=popup
-  #   share_link: "&amp;u="
-
-#  - icon:	google-plus
-#    url:	https://google.com/???
-#    desc:	Add me on google+
-#    share_url:
-#    share_title:
-#    share_link:

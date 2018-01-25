@@ -1,5 +1,9 @@
+---
+layout: null
+---
 {
-  "name": "Dev Knights",
+  "name": "{{ site.title }}",
+  "description": "{{ site.description | xml_escape }}",
   "icons": [
     {
       "src": "/assets/images/android-chrome-192x192.png",
@@ -7,7 +11,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#ffffff",
-  "background_color": "#000000",
+  "theme_color": "#000",
+  "background_color": "#000",
   "display": "standalone"
 }
