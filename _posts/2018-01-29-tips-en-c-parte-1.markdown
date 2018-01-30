@@ -17,7 +17,7 @@ Es por eso que decidí escribir acerca de C, y de cosas que he encontrado de él
 
 La definción más sencilla de mencionar de una apuntador es:
 
-> Un apuntador es un variable que posee un tipo de dato, él cuál *apunta* a una dirección de memoria.
+> Un apuntador es una variable que posee un tipo de dato, él cuál *apunta* a una dirección de memoria.
 
 Decir que *apunta* a una dirección de memoria es que el valor que un apuntador guarda es literalmente el número de la dirección de memoria. La memoria esta direccionada como si fuera un arreglo, desde el 0 hasta, por ejemplo, tus 8GB de memoria RAM.
 
@@ -42,7 +42,7 @@ int main(int argc, const char *argv[])
 
 En este programa vemos la definición de un apuntador, esta es `int * a_numero = &numero`, que significa: definir un apuntador de enteros llamado `a_numero`. El valor que se le da al apuntador es `&numero`, poner el `&` antes del nombre de la variable pide el apuntador (o dirección de memoria) de la variable `numero`.
 
-El resultado del código sería los siguiente
+El resultado del código sería lo siguiente
 
 ```
 El numero es 20
@@ -54,7 +54,7 @@ Observa el segundo resultado de imprimir el apuntador. Este es el número de mem
 
 ### El apuntador es una referencia
 
-Si, el apuntador `a_numero` es una referencia a `numero`, asi que cualquier operacion que hagamos sobre `*a_numero` sera sobre el valor de `numero`. La reasignacion, por ejemplo, de `*a_numero` hará que el valor de `numero` también cambie.
+Si, el apuntador `a_numero` es una referencia a `numero`, asi que cualquier operacion que hagamos sobre `*a_numero` será sobre el valor de `numero`. La reasignación, por ejemplo, de `*a_numero` hará que el valor de `numero` también cambie.
 
 ```c
 #include <stdio.h>
@@ -94,4 +94,5 @@ Entonces al modificar el valor de `*a_numero` modificó de igual forma a `numero
 
 ---
 
-Espero que encuentres útil ésta información. En la siguiente publicación de esta serie hablaré sobre los `struct` en C y cómo hacer nuestros propios tipos de datos complejos para dar a neustros programas un mejor manejo de la memoria.
+Espero que encuentres útil ésta información. En la siguiente publicación de esta serie hablaré sobre los `struct` en C y cómo hacer nuestros propios tipos de datos complejos para dar a nuestros programas un mejor manejo de la memoria.
+
