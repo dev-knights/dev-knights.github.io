@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+ruby "2.5.0"
 
 # 'github-pages' includes 'jekyll' gem
 gem 'github-pages'

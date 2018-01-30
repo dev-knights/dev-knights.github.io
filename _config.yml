@@ -30,4 +30,4 @@ twitter_handle: '@arandilopez'
 
 google_analytics: UA-52471938-4
 
-exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENSE", "Rakefile", "THEME-LICENSE"]
+exclude: ["Gemfile", "Gemfile.lock", "README.md", "LICENSE", "Rakefile", "THEME-LICENSE", "vendor"]
