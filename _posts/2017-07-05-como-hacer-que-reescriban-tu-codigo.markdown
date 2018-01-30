@@ -3,7 +3,7 @@ layout: post
 published: true
 title: Cómo hacer que reescriban tu código
 author: arandi
-tags: featured sarcasm
+tags: sarcasm
 category: spanish
 image: https://static.pexels.com/photos/33535/primate-ape-thinking-mimic.jpg
 lang: es
