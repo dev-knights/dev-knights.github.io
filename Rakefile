@@ -93,6 +93,7 @@ end
 # usage rake new_draft
 desc "Publish draft in #{posts_dir}"
 task :publish_draft do
+  ARGV.each { |a| task a.to_sym do ; end }
   next if ARGV.size < 2
   file = ARGV.last
   filename = File.basename file
@@ -101,7 +102,7 @@ task :publish_draft do
     abort("rake aborted!") if ask("#{post_filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
   puts "Creating new post: #{post_filename}"
-  open(post_filename, 'w') do |post|
+  File.open(post_filename, 'w') do |post|
     post.puts File.read(file)
   end
   puts "Deleting draft #{filename}"
