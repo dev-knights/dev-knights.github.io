@@ -1,6 +1,9 @@
 # [Dev Knights](https://dev-knights.github.io/)
+
+[![Build Status](https://travis-ci.org/dev-knights/dev-knights.github.io.svg?branch=master)](https://travis-ci.org/dev-knights/dev-knights.github.io)
+
 ![logo](assets/images/logo.png)
-## Become a member
+## Become a member!
 
 If you want to **become an author**, leave us an [issue](https://github.com/dev-knights/dev-knights.github.io/issues) requesting contributor access to this repo.
 
