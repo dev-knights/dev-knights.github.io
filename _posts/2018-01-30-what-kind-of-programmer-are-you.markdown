@@ -7,8 +7,6 @@ tags: php senior developer programmer featured
 ---
 A year ago I read an [article](https://sg.com.mx/revista/53/el-caso-php-y-los-salarios#.WKdlaxIrKRv) published in the software magazine Software Gurú by [Basilio Briseño](https://sg.com.mx/sgvirtual/speakers/basilio-brice-o) where He stated that PHP is one of the least paid languages ​​in Mexico and why. In his article he also published a salary range based for every type of programmer made by the programming group "PHP Mexico".
 
-Aunque el tabulador está orientado a las habilidades de un programador de PHP, el concepto del tipo de programador que en cada sección se lista da a entender lo que se espera que un Novato, Junior, Senior o Master developer debe ser para poder caer en la clasificación.
-
 Although the salary range skill classification is aimed towards PHP programmer, the type of programmer classification 
 can be applied outside php programming. The following list suggests what a Rookie, Junior, Senior and Master developer skills are expected to get into that classification.
 
