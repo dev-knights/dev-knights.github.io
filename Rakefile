@@ -5,7 +5,7 @@ require "stringex"
 ## -- Config -- ##
 
 posts_dir       = "_posts"    # directory for blog files
-drafts_dir       = "_drafts"  # directory for blog files
+drafts_dir      = "_drafts"  # directory for blog files
 new_post_ext    = "markdown"  # default new post file extension when using the new_post task
 new_page_ext    = "md"
 
@@ -92,7 +92,7 @@ end
 
 # usage rake new_draft
 desc "Publish draft in #{posts_dir}"
-task :publish_draft, :filename do |t, args|
+task :publish_draft do
   next if ARGV.size < 2
   file = ARGV.last
   filename = File.basename file
