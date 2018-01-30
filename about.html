@@ -1,0 +1,39 @@
+---
+layout: default
+title: About
+permalink: /about
+---
+
+<header class="blog-header">
+  <h1 class="blog-title">{{ page.title }}</h1>
+</header>
+
+<main class="content" role="main">
+  <h2 class="section-title">Authors</h2>
+  <section class="authors">
+    {% for aut in site.data.authors %}
+    {% assign author = aut.last %}
+    <div class="author">
+      <div class="author-image" style="background-image: url({{author.image | prepend: site.baseurl}})"></div>
+      <h4>
+        <a rel="author" href="{{author.homepage}}" rel="author">
+          {{ author.name }}
+        </a>
+      </h4>
+      <p class="bio">
+        {{author.bio}}
+        <br>
+        {% if author.homepage %}
+        <a href="{{ author.homepage }}"><i class="fa fa-link" target="_blank"></i></a>
+        {% endif %}
+        {% if author.twitter %}
+        <a href="https://twitter.com/{{ author.twitter }}" target="_blank"><i class="fa fa-twitter"></i></a>
+        {% endif %}
+        {% if author.github %}
+        <a href="https://github.com/{{ author.github }}" target="_blank"><i class="fa fa-github"></i></a>
+        {% endif %}
+      </p>
+    </div>
+    {% endfor %}
+  </section>
+</main>
