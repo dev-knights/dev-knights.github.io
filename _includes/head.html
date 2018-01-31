@@ -18,7 +18,7 @@
     <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta name="twitter:image" content="{{ site.logo | prepend: site.baseurl | prepend: site.url }}" />
     {% if page.excerpt %}
-    <meta name="twitter:description"  content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}" />
+    <meta name="twitter:description"  content="{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}" />
     {% elsif site.description %}
     <meta name="twitter:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}" />
     {% endif %}
@@ -27,7 +27,7 @@
   <meta property="og:site_name" content="{{ site.title }}" />
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   {% if page.excerpt %}
-  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 }}" />
+  <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 100 }}" />
   {% elsif site.description %}
   <meta property="og:description" content="{{ site.description | strip_html | strip_newlines | truncate: 200 }}" />
   {% endif %}

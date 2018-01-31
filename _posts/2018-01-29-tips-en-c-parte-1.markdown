@@ -95,4 +95,3 @@ Entonces al modificar el valor de `*a_numero` modificó de igual forma a `numero
 ---
 
 Espero que encuentres útil ésta información. En la siguiente publicación de esta serie hablaré sobre los `struct` en C y cómo hacer nuestros propios tipos de datos complejos para dar a nuestros programas un mejor manejo de la memoria.
-
