@@ -7,6 +7,19 @@
 
 If you want to **become an author**, leave us an [issue](https://github.com/dev-knights/dev-knights.github.io/issues) requesting contributor access to this repo.
 
+Add your author information in `_data/authors.yml`
+
+```yml
+short_name: # <- how to retrieve your info in posts
+  name: Your Name Here
+  bio: Something cool about you
+  twitter: username
+  github: usarname
+  homepage: https://yourpage.com
+  profile: https://yourpage.com # or something else like your G+ profile
+  image: https://link_to_image.com # like gravatar
+```
+
 ## Install
 
 1. Clone this repository
