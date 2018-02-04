@@ -647,5 +647,60 @@ pre
     font-size: 12px
     text-align: center
 
-    // &:hover
-    //   background-color: darken(#e7e7e7, 10%)
+.content
+  width: 100%
+  max-width: 700px
+  margin: 0 auto
+  @include box-sizing(border-box)
+  @include respond-to(800)
+    padding: 0 $rs*2
+
+  .authors
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    flex-flow: wrap
+    justify-content: flex-start
+    align-content: space-between
+    align-items: center
+
+
+    .author
+      align-self: auto
+      width: 50%
+      margin-bottom: 40px
+      @include box-sizing(border-box)
+      @include respond-to(800)
+        margin-bottom: 25px
+        width: 100%
+        padding-bottom: $rs
+
+
+      .author-image
+        display: block
+        width: 80px
+        height: 80px
+        float: left
+        background-size: cover
+        border-radius: 100%
+        text-indent: -9999px
+      h4
+        font-size: 18px
+        line-height: 1.1
+        font-weight: 700
+        padding: 0
+        margin: 0
+        padding-left: 100px
+        a
+          text-decoration: none
+          color: #333
+      p
+        font-size: 14px
+        line-height: 1.3
+        font-weight: 400
+        padding: 0
+        margin: 0
+        padding-left: 100px
+        a
+          text-decoration: none
+          color: #333

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: About
+title: About us
 permalink: /about
 ---
 
@@ -9,14 +9,14 @@ permalink: /about
 </header>
 
 <main class="content" role="main">
-  <h2 class="section-title">Authors</h2>
+  <h2 class="section-title">{{site.title}}' Authors</h2>
   <section class="authors">
     {% for aut in site.data.authors %}
     {% assign author = aut.last %}
     <div class="author">
       <div class="author-image" style="background-image: url({{author.image | prepend: site.baseurl}})"></div>
       <h4>
-        <a rel="author" href="{{author.homepage}}" rel="author">
+        <a rel="author" href="{{author.homepage}}" rel="author" target="_blank">
           {{ author.name }}
         </a>
       </h4>
