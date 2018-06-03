@@ -2,7 +2,7 @@
 layout: post
 title: Efficent webhook handlig with Ruby on Rails
 author: arandi
-published: false
+published: true
 tags: webhooks ruby rails ror
 lang: en
 ---
@@ -109,3 +109,5 @@ Laravel Cashier implementation looks wonderful to handle webhook events. Therefo
 ### ProTip
 
 As a next step you could write [concerns](http://api.rubyonrails.org/classes/ActiveSupport/Concern.html) to group event handlers. Now you have a lighter controller.
+
+*Do you want to read this article in spanish? Check it [here]({{site.baseurl}}{% post_url 2018-06-03-manejo-eficiente-de-webhooks-con-ruby-on-rails %})*
