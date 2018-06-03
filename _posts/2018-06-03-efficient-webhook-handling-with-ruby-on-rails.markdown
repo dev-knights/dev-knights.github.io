@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Efficent webhook handlig with Ruby on Rails
+title: Efficent webhook handling with Ruby on Rails
 author: arandi
 published: true
 tags: webhooks ruby rails ror
