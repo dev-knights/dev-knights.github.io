@@ -13,11 +13,11 @@ When implementing a payment system as Paypal or Stripe, the more tedious part is
 
 ## What are the Webhooks for?
 
-[Webhooks](https://en.wikipedia.org/wiki/Webhook) are endpoints in your application where a service like Paypal or Stripe will inform you about the events happening in them. Paypal and Stripe use the to notify whether a charge was successful or not, for example. This mechanism is necesary given the charges proccess are asyncronous. Ergo, in the moment we create a charge using thier API we won't know until in the future if the charge was successful or not.
+[Webhooks](https://en.wikipedia.org/wiki/Webhook) are endpoints in your application where a service like Paypal or Stripe will inform you about the events happening in them. Paypal and Stripe use them to notify whether a charge was successful or not, for example. This mechanism is necesary given the charges proccess are asyncronous. Ergo, in the moment we create a charge using thier API we won't know until in the future if the charge was successful or not.
 
 ## Standard way
 
-The webhook is just an endpoint (route or path) which receives information through `POST` method. In Rails a barebones implementation of Stripe webhook could be:
+The webhook is just an endpoint (route or path) which receives information through `POST` method. In Rails a barebone implementation of Stripe webhook could be:
 
 ``` ruby
 # controllers/stripe_controller.rb
@@ -39,7 +39,7 @@ def webhook
 end
 ```
 
-This `webhook` method uses a `switch-case` in order to determinate, with the event type that was received, which code block execute. Now imagine implement mor events, this method will smell and get hard to maintain.
+This `webhook` method uses a `switch-case` in order to determinate, with the event type that was received, which code block execute. Now imagine implement more events, this method will smell and get hard to maintain.
 
 Sure we can write more methods to put the logic of each event and call them into the `switch-case`, however we can still improve this webhook method.
 
@@ -98,11 +98,11 @@ end
 # and more...
 ```
 
-Int he webhook method we need to parse the event type to the mane of the method which will handle that event.
+In the webhook method we need to parse the event type to the name of the method which will handle that event.
 
 1. Translate all `'.'` to `'_'` and concatenate with `"handle_"`.
 2. Then send the message to call the resultant method with the payload obtained.
-3. Later, if there's no method implemented for that event, it will be rescued where we can make another action.
+3. Otherwise, if there's no method implemented for that event, it will be rescued where we can make another action.
 
 Laravel Cashier implementation looks wonderful to handle webhook events. Therefore this way you get a clean and maintainable controller.
 
