@@ -6,8 +6,8 @@ require "stringex"
 
 posts_dir       = "_posts"    # directory for blog files
 drafts_dir      = "_drafts"  # directory for blog files
-new_post_ext    = "md"  # default new post file extension when using the new_post task
-new_page_ext    = "md"
+new_post_ext    = "markdown"  # default new post file extension when using the new_post task
+new_page_ext    = "markdown"
 
 namespace :new do
   #############################
